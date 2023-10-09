@@ -1,0 +1,14 @@
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\bin\Debug\net6.0\ShopMaar.Core.deps.json
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\bin\Debug\net6.0\ShopMaar.Core.runtimeconfig.json
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\bin\Debug\net6.0\ShopMaar.Core.dll
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\bin\Debug\net6.0\ShopMaar.Core.pdb
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\obj\Debug\net6.0\ShopMaar.Core.csproj.AssemblyReference.cache
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\obj\Debug\net6.0\ShopMaar.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\obj\Debug\net6.0\ShopMaar.Core.AssemblyInfoInputs.cache
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\obj\Debug\net6.0\ShopMaar.Core.AssemblyInfo.cs
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\obj\Debug\net6.0\ShopMaar.Core.csproj.CoreCompileInputs.cache
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\obj\Debug\net6.0\ShopMaar.Core.dll
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\obj\Debug\net6.0\refint\ShopMaar.Core.dll
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\obj\Debug\net6.0\ShopMaar.Core.pdb
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\obj\Debug\net6.0\ShopMaar.Core.genruntimeconfig.cache
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.Core\obj\Debug\net6.0\ref\ShopMaar.Core.dll
