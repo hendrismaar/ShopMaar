@@ -14,4 +14,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ShopMaar.Core\ShopMaar.Core.csproj" />
+    <ProjectReference Include="..\ShopMaar.Data\ShopMaar.Data.csproj" />
+  </ItemGroup>
+
 </Project>

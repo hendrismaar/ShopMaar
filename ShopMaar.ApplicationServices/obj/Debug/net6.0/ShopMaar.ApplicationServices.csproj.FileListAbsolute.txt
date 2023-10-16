@@ -12,3 +12,17 @@ C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.ApplicationSer
 C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.pdb
 C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.genruntimeconfig.cache
 C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ref\ShopMaar.ApplicationServices.dll
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\bin\Debug\net6.0\ShopMaar.ApplicationServices.deps.json
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\bin\Debug\net6.0\ShopMaar.ApplicationServices.runtimeconfig.json
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\bin\Debug\net6.0\ShopMaar.ApplicationServices.dll
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\bin\Debug\net6.0\ShopMaar.ApplicationServices.pdb
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.csproj.AssemblyReference.cache
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.AssemblyInfoInputs.cache
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.AssemblyInfo.cs
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.dll
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\refint\ShopMaar.ApplicationServices.dll
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.pdb
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.genruntimeconfig.cache
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ref\ShopMaar.ApplicationServices.dll
