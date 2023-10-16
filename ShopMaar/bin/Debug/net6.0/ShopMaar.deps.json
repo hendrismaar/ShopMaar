@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.22",
           "Microsoft.EntityFrameworkCore.Design": "6.0.22",
+          "ShopMaar.ApplicationServices": "1.0.0",
           "ShopMaar.Data": "1.0.0"
         },
         "runtime": {
@@ -440,6 +441,16 @@
           }
         }
       },
+      "ShopMaar.ApplicationServices/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.22",
+          "ShopMaar.Core": "1.0.0",
+          "ShopMaar.Data": "1.0.0"
+        },
+        "runtime": {
+          "ShopMaar.ApplicationServices.dll": {}
+        }
+      },
       "ShopMaar.Core/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.22"
@@ -759,6 +770,11 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "ShopMaar.ApplicationServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ShopMaar.Core/1.0.0": {
       "type": "project",

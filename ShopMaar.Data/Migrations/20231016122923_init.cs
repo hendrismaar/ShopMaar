@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ShopMaar.Data.Migrations
 {
-    public partial class spaceshipinit : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "spaceships",
+                name: "Spaceships",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -23,7 +23,7 @@ namespace ShopMaar.Data.Migrations
                     BuiltAtDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     MaidenLaunch = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Manufacturer = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsSpaceShipPerviouslyOwned = table.Column<bool>(type: "bit", nullable: false),
+                    IsSpaceShipPreviouslyOwned = table.Column<bool>(type: "bit", nullable: false),
                     FullTripsCount = table.Column<int>(type: "int", nullable: false),
                     Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EnginePower = table.Column<int>(type: "int", nullable: false),
@@ -35,43 +35,14 @@ namespace ShopMaar.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_spaceships", x => x.Id);
+                    table.PrimaryKey("PK_Spaceships", x => x.Id);
                 });
-
-            migrationBuilder.CreateTable(
-                name: "Dimension",
-                columns: table => new
-                {
-                    DimensionID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Width = table.Column<int>(type: "int", nullable: false),
-                    Height = table.Column<int>(type: "int", nullable: false),
-                    Depth = table.Column<int>(type: "int", nullable: false),
-                    SpaceshipId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Dimension", x => x.DimensionID);
-                    table.ForeignKey(
-                        name: "FK_Dimension_spaceships_SpaceshipId",
-                        column: x => x.SpaceshipId,
-                        principalTable: "spaceships",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Dimension_SpaceshipId",
-                table: "Dimension",
-                column: "SpaceshipId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Dimension");
-
-            migrationBuilder.DropTable(
-                name: "spaceships");
+                name: "Spaceships");
         }
     }
 }

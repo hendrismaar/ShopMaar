@@ -26,3 +26,8 @@ C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6
 C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.pdb
 C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.genruntimeconfig.cache
 C:\Users\hendr\source\repos\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ref\ShopMaar.ApplicationServices.dll
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.ApplicationServices\bin\Debug\net6.0\ShopMaar.Core.dll
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.ApplicationServices\bin\Debug\net6.0\ShopMaar.Data.dll
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.ApplicationServices\bin\Debug\net6.0\ShopMaar.Core.pdb
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.ApplicationServices\bin\Debug\net6.0\ShopMaar.Data.pdb
+C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar.ApplicationServices\obj\Debug\net6.0\ShopMaar.ApplicationServices.csproj.CopyComplete

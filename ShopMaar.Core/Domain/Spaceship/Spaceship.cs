@@ -13,7 +13,7 @@ namespace ShopMaar.Core.Domain.Spaceship
         public Guid? Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public ICollection<Dimension> Dimensions { get; set; } 
+        //public ICollection<Dimension> Dimensions { get; set; } 
         public int PassengerCount { get; set; }
         public int CrewCount { get; set; }
         public int CargoWeight { get; set; }
@@ -21,7 +21,7 @@ namespace ShopMaar.Core.Domain.Spaceship
         public DateTime BuiltAtDate { get; set; }
         public DateTime MaidenLaunch { get; set; }
         public string Manufacturer { get; set; }
-        public bool IsSpaceShipPerviouslyOwned { get; set; }
+        public bool IsSpaceShipPreviouslyOwned { get; set; }
         public int FullTripsCount { get; set; }
         public string Type { get; set; }
         public int EnginePower { get; set; }
@@ -34,12 +34,12 @@ namespace ShopMaar.Core.Domain.Spaceship
         public DateTime CreatedAt { get; set;}
         public DateTime ModifiedAt { get; set; } 
     }
-    public class Dimension
-    {
-        [Key]
-        public int DimensionID { get; set; }
-        public int Width { get; set; }
-        public int Height { get; set; }
-        public int Depth { get; set; }
-    }
+    //public class Dimension
+    //{
+    //    [Key]
+    //    public int DimensionID { get; set; }
+    //    public int Width { get; set; }
+    //    public int Height { get; set; }
+    //    public int Depth { get; set; }
+    //}
 }

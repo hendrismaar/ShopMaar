@@ -22,33 +22,6 @@ namespace ShopMaar.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ShopMaar.Core.Domain.Spaceship.Dimension", b =>
-                {
-                    b.Property<int>("DimensionID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DimensionID"), 1L, 1);
-
-                    b.Property<int>("Depth")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Height")
-                        .HasColumnType("int");
-
-                    b.Property<Guid?>("SpaceshipId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("Width")
-                        .HasColumnType("int");
-
-                    b.HasKey("DimensionID");
-
-                    b.HasIndex("SpaceshipId");
-
-                    b.ToTable("Dimension");
-                });
-
             modelBuilder.Entity("ShopMaar.Core.Domain.Spaceship.Spaceship", b =>
                 {
                     b.Property<Guid?>("Id")
@@ -80,7 +53,7 @@ namespace ShopMaar.Data.Migrations
                     b.Property<int>("FullTripsCount")
                         .HasColumnType("int");
 
-                    b.Property<bool>("IsSpaceShipPerviouslyOwned")
+                    b.Property<bool>("IsSpaceShipPreviouslyOwned")
                         .HasColumnType("bit");
 
                     b.Property<DateTime>("LastMaintenance")
@@ -115,19 +88,7 @@ namespace ShopMaar.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("spaceships");
-                });
-
-            modelBuilder.Entity("ShopMaar.Core.Domain.Spaceship.Dimension", b =>
-                {
-                    b.HasOne("ShopMaar.Core.Domain.Spaceship.Spaceship", null)
-                        .WithMany("Dimensions")
-                        .HasForeignKey("SpaceshipId");
-                });
-
-            modelBuilder.Entity("ShopMaar.Core.Domain.Spaceship.Spaceship", b =>
-                {
-                    b.Navigation("Dimensions");
+                    b.ToTable("Spaceships");
                 });
 #pragma warning restore 612, 618
         }

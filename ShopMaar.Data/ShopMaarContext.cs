@@ -12,6 +12,6 @@ namespace ShopMaar.Data
     {
         public ShopMaarContext(DbContextOptions<ShopMaarContext> options) : base(options){ }
 
-        public DbSet<Spaceship> spaceships { get; set; }
+        public DbSet<Spaceship> Spaceships { get; set; }
     }
 }
