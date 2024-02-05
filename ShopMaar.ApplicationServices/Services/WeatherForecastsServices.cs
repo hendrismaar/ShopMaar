@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using ShopMaar.Core.Dto.WeatherDtos;
 using ShopMaar.Core.ServiceInterface;
+using ShopMaar.Core.Dto.OpenWeatherDtos;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
 
 namespace ShopMaar.ApplicationServices.Services
 {
@@ -57,6 +59,26 @@ namespace ShopMaar.ApplicationServices.Services
                 weatherInfo.DailyForecasts[0].Night.PrecipitationType = dto.NightPrecipitationType;
                 weatherInfo.DailyForecasts[0].Night.PrecipitationIntensity = dto.NightPrecipitationIntensity;
             }
+            return dto;
+        }
+
+        public async Task<OpenWeatherResultDto> OpenWeatherDetail(OpenWeatherResultDto dto)
+        {
+            var url = $"https://api.openweathermap.org/data/2.5/weather?q=tallinn?appid=d67b2095891b8cf82a4f07c10da54cff";
+        
+            using (WebClient client = new WebClient())
+            {
+                string json = client.DownloadString(url);
+                OpenWeatherRootDto weatherInfo = new JavaScriptSerializer().Deserialize<OpenWeatherRootDto>(json);
+
+                dto.City = weatherInfo.Name;
+                dto.Temp = Math.Round(weatherInfo.Main.Temp);
+                dto.Feels_like = Math.Round(weatherInfo.Main.Feels_like);
+                dto.Humidity = weatherInfo.Main.Humidity;
+                dto.Pressure = weatherInfo.Main.Pressure;
+                dto.Speed = weatherInfo.Main.Speed;
+                dto.description = weatherInfo.Weather[0].Description;
+            }                  
             return dto;
         }
     }

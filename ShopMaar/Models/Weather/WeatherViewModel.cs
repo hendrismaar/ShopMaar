@@ -32,7 +32,22 @@ namespace ShopMaar.Models.Weather
         public string NightPrecipitationType { get; set; }
         public string NightPrecipitationIntensity { get; set; }
     }
-    public class Temperature
+
+    public class Temperatures
+    {
+        public Temperature Minimum { get; set; }
+        public Temperature Maximum { get; set; }
+    }
+
+    public class DayNightCycles
+    {
+        public int Icon { get; set; }
+        public string IconPhrase { get; set; }
+        public bool HasPrecipitation { get; set; }
+        public string PrecipitationType { get; set; }
+        public string PrecipitationIntensity { get; set; }
+    }
+        public class Temperature
     {
         public double Value { get; set; }
         public string Unit { get; set; }

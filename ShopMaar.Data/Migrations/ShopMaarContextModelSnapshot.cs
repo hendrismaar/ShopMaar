@@ -22,6 +22,67 @@ namespace ShopMaar.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("ShopMaar.Core.Domain.Car", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GearShiftType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Model")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cars");
+                });
+
+            modelBuilder.Entity("ShopMaar.Core.Domain.FileToApi", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("CarId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ExistingFilePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("RealEstateId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CarId");
+
+                    b.HasIndex("RealEstateId");
+
+                    b.ToTable("FilesToApi");
+                });
+
             modelBuilder.Entity("ShopMaar.Core.Domain.FileToDatabase", b =>
                 {
                     b.Property<Guid>("Id")
@@ -199,6 +260,27 @@ namespace ShopMaar.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Spaceships");
+                });
+
+            modelBuilder.Entity("ShopMaar.Core.Domain.FileToApi", b =>
+                {
+                    b.HasOne("ShopMaar.Core.Domain.Car", null)
+                        .WithMany("FilesToApi")
+                        .HasForeignKey("CarId");
+
+                    b.HasOne("ShopMaar.Core.Domain.RealEstate", null)
+                        .WithMany("FilesToApi")
+                        .HasForeignKey("RealEstateId");
+                });
+
+            modelBuilder.Entity("ShopMaar.Core.Domain.Car", b =>
+                {
+                    b.Navigation("FilesToApi");
+                });
+
+            modelBuilder.Entity("ShopMaar.Core.Domain.RealEstate", b =>
+                {
+                    b.Navigation("FilesToApi");
                 });
 #pragma warning restore 612, 618
         }

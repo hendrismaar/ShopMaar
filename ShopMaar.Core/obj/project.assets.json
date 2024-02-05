@@ -347,6 +347,22 @@
           "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.22": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.22"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.22": {
         "type": "package",
         "dependencies": {
@@ -3235,6 +3251,20 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
         "microsoft.entityframeworkcore.design.6.0.22.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.22": {
+      "sha512": "CcL5ajX+/OkafcP5OMplCBnIgSfaQy5BUjEZQKZ9BlspnwFFucy+wcE0LL1ycOlWcDYGI42FnQ45dD1Kcz+ZKA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.22",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.6.0.22.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/6.0.22": {
@@ -8538,6 +8568,7 @@
       "Microsoft.AspNetCore.Http.Extensions >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 6.0.22",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.22",
+      "Microsoft.EntityFrameworkCore.InMemory >= 6.0.22",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.22",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.22",
       "Microsoft.Extensions.Configuration >= 8.0.0",
@@ -8552,23 +8583,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hendr\\.nuget\\packages\\": {},
+    "C:\\Users\\opilane\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Core\\ShopMaar.Core.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Core\\ShopMaar.Core.csproj",
       "projectName": "ShopMaar.Core",
-      "projectPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Core\\ShopMaar.Core.csproj",
-      "packagesPath": "C:\\Users\\hendr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Core\\obj\\",
+      "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Core\\ShopMaar.Core.csproj",
+      "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\hendr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8577,6 +8608,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8626,6 +8658,10 @@
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.22, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[6.0.22, )"
           },
@@ -8692,7 +8728,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

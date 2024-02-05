@@ -12,6 +12,7 @@ using ShopMaar.Data;
 using ShopMaar.SpaceshipTest.Macros;
 using Microsoft.Extensions.Hosting;
 using ShopMaar.SpaceshipTest.Mock;
+using Microsoft.EntityFrameworkCore.InMemory;
 
 namespace ShopMaar.SpaceshipTest
 {
