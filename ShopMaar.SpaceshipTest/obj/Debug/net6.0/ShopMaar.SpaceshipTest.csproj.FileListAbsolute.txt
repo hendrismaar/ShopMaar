@@ -1,0 +1,5 @@
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.SpaceshipTest\obj\Debug\net6.0\ShopMaar.SpaceshipTest.csproj.AssemblyReference.cache
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.SpaceshipTest\obj\Debug\net6.0\ShopMaar.SpaceshipTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.SpaceshipTest\obj\Debug\net6.0\ShopMaar.SpaceshipTest.AssemblyInfoInputs.cache
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.SpaceshipTest\obj\Debug\net6.0\ShopMaar.SpaceshipTest.AssemblyInfo.cs
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar.SpaceshipTest\obj\Debug\net6.0\ShopMaar.SpaceshipTest.csproj.CoreCompileInputs.cache

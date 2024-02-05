@@ -22,7 +22,117 @@ namespace ShopMaar.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ShopMaar.Core.Domain.Spaceship.Spaceship", b =>
+            modelBuilder.Entity("ShopMaar.Core.Domain.FileToDatabase", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<byte[]>("ImageData")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("ImageTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("SpaceshipId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("FilesToDatabase");
+                });
+
+            modelBuilder.Entity("ShopMaar.Core.Domain.RealEstate", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Bathrooms")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Bedrooms")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("BuildDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("County")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("DoesHaveParkingSpace")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("DoesHavePowerGridConnection")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("DoesHaveWaterGridConnection")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("EstateFloor")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FaxNumber")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FloorCount")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsPropertyNewDevelopment")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsPropertySold")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ListingDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("PhoneNumber")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PostalCode")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoomCount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SquareMeters")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RealEstates");
+                });
+
+            modelBuilder.Entity("ShopMaar.Core.Domain.Spaceship", b =>
                 {
                     b.Property<Guid?>("Id")
                         .ValueGeneratedOnAdd()
@@ -53,7 +163,7 @@ namespace ShopMaar.Data.Migrations
                     b.Property<int>("FullTripsCount")
                         .HasColumnType("int");
 
-                    b.Property<bool>("IsSpaceShipPreviouslyOwned")
+                    b.Property<bool>("IsSpaceshipPreviouslyOwned")
                         .HasColumnType("bit");
 
                     b.Property<DateTime>("LastMaintenance")

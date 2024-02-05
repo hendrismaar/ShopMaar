@@ -1,11 +1,11 @@
-﻿using ShopMaar.Core.Domain.Spaceship;
+﻿using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ShopMaar.Core.Domain.Spaceship;
+using ShopMaar.Core.Domain;
 
 namespace ShopMaar.Core.Dto
 {
@@ -20,7 +20,7 @@ namespace ShopMaar.Core.Dto
         public int PassengerCount { get; set; } // how many passengers does the ship carry
         public int CrewCount { get; set; } // how many crew members is needed to operate the ship
         public int CargoWeight { get; set; } // how much cargo the ship is able to carry
-        public int MaxSpeedInVaccuum { get; set; } // maximum speed after exiting atmosphere
+        public int MaxSpeedInVacuum { get; set; } // maximum speed after exiting atmosphere
         public DateTime BuiltAtDate { get; set; } // the date this ship was built at
         public DateTime MaidenLaunch { get; set; } // the date that this ship did its first voyage
         public string Manufacturer { get; set; } // company who manufactured the spaceship
@@ -31,7 +31,8 @@ namespace ShopMaar.Core.Dto
         public int FuelConsumptionPerDay { get; set; } // fuel consumed in a days worth of space traveled at maximum speed
         public int MaintenanceCount { get; set; } // how many maintenance sessions have been conducted on this ship
         public DateTime LastMaintenance { get; set; } // when was the last maintenance performed
-
+        public List<IFormFile> Files { get; set; } // Files that are to be added to this spaceship
+        public IEnumerable<FileToDatabaseDto> Image { get; set; } = new List<FileToDatabaseDto>(); // images themselves that are added
 
         // only in database
 

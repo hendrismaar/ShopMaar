@@ -144,3 +144,6 @@ C:\Users\hendr\source\repos\ShopMaar\ShopMaar\obj\Debug\net6.0\ShopMaar.genrunti
 C:\Users\hendr\source\repos\ShopMaar\ShopMaar\obj\Debug\net6.0\ref\ShopMaar.dll
 C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar\bin\Debug\net6.0\ShopMaar.ApplicationServices.dll
 C:\Users\opilane\source\repos\TARpe21\Spaceship\ShopMaar\ShopMaar\bin\Debug\net6.0\ShopMaar.ApplicationServices.pdb
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar\bin\Debug\net6.0\ShopMaar.ApplicationServices.dll
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar\bin\Debug\net6.0\ShopMaar.ApplicationServices.pdb
+C:\Users\hendr\source\repos\ShopMaar\ShopMaar\bin\Debug\net6.0\Microsoft.Extensions.Features.dll

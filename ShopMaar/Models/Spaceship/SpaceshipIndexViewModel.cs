@@ -1,4 +1,4 @@
-﻿using ShopMaar.Core.Domain.Spaceship;
+﻿using ShopMaar.Core.Domain;
 using System.ComponentModel.DataAnnotations;
 
 namespace ShopMaar.Models.Spaceship
@@ -13,7 +13,7 @@ namespace ShopMaar.Models.Spaceship
         public int PassengerCount { get; set; } // how many passengers does the ship carry
         public int CrewCount { get; set; } // how many crew members is needed to operate the ship
         public int CargoWeight { get; set; } // how much cargo the ship is able to carry
-        public int MaxSpeedInVaccuum { get; set; } // maximum speed after exiting atmosphere
+        public int MaxSpeedInVacuum { get; set; } // maximum speed after exiting atmosphere
         public DateTime BuiltAtDate { get; set; } // the date this ship was built at
         public DateTime MaidenLaunch { get; set; } // the date that this ship did its first voyage
         public string Manufacturer { get; set; } // company who manufactured the spaceship
