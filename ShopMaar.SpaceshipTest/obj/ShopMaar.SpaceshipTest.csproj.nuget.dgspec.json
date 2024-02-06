@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.SpaceshipTest\\ShopMaar.SpaceshipTest.csproj": {}
+    "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.SpaceshipTest\\ShopMaar.SpaceshipTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.ApplicationServices\\ShopMaar.ApplicationServices.csproj": {
+    "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.ApplicationServices\\ShopMaar.ApplicationServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.ApplicationServices\\ShopMaar.ApplicationServices.csproj",
+        "projectUniqueName": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.ApplicationServices\\ShopMaar.ApplicationServices.csproj",
         "projectName": "ShopMaar.ApplicationServices",
-        "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.ApplicationServices\\ShopMaar.ApplicationServices.csproj",
-        "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.ApplicationServices\\obj\\",
+        "projectPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.ApplicationServices\\ShopMaar.ApplicationServices.csproj",
+        "packagesPath": "C:\\Users\\hendr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.ApplicationServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hendr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Core\\ShopMaar.Core.csproj": {
-                "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Core\\ShopMaar.Core.csproj"
+              "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Core\\ShopMaar.Core.csproj": {
+                "projectPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Core\\ShopMaar.Core.csproj"
               },
-              "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Data\\ShopMaar.Data.csproj": {
-                "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Data\\ShopMaar.Data.csproj"
+              "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Data\\ShopMaar.Data.csproj": {
+                "projectPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Data\\ShopMaar.Data.csproj"
               }
             }
           }
@@ -153,24 +152,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Core\\ShopMaar.Core.csproj": {
+    "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Core\\ShopMaar.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Core\\ShopMaar.Core.csproj",
+        "projectUniqueName": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Core\\ShopMaar.Core.csproj",
         "projectName": "ShopMaar.Core",
-        "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Core\\ShopMaar.Core.csproj",
-        "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Core\\obj\\",
+        "projectPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Core\\ShopMaar.Core.csproj",
+        "packagesPath": "C:\\Users\\hendr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hendr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -179,7 +178,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -299,24 +297,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Data\\ShopMaar.Data.csproj": {
+    "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Data\\ShopMaar.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Data\\ShopMaar.Data.csproj",
+        "projectUniqueName": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Data\\ShopMaar.Data.csproj",
         "projectName": "ShopMaar.Data",
-        "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Data\\ShopMaar.Data.csproj",
-        "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Data\\obj\\",
+        "projectPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Data\\ShopMaar.Data.csproj",
+        "packagesPath": "C:\\Users\\hendr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hendr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -325,15 +323,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Core\\ShopMaar.Core.csproj": {
-                "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Core\\ShopMaar.Core.csproj"
+              "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Core\\ShopMaar.Core.csproj": {
+                "projectPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Core\\ShopMaar.Core.csproj"
               }
             }
           }
@@ -449,24 +446,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.SpaceshipTest\\ShopMaar.SpaceshipTest.csproj": {
+    "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.SpaceshipTest\\ShopMaar.SpaceshipTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.SpaceshipTest\\ShopMaar.SpaceshipTest.csproj",
+        "projectUniqueName": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.SpaceshipTest\\ShopMaar.SpaceshipTest.csproj",
         "projectName": "ShopMaar.SpaceshipTest",
-        "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.SpaceshipTest\\ShopMaar.SpaceshipTest.csproj",
-        "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.SpaceshipTest\\obj\\",
+        "projectPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.SpaceshipTest\\ShopMaar.SpaceshipTest.csproj",
+        "packagesPath": "C:\\Users\\hendr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.SpaceshipTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hendr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -475,18 +472,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.ApplicationServices\\ShopMaar.ApplicationServices.csproj": {
-                "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.ApplicationServices\\ShopMaar.ApplicationServices.csproj"
+              "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.ApplicationServices\\ShopMaar.ApplicationServices.csproj": {
+                "projectPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.ApplicationServices\\ShopMaar.ApplicationServices.csproj"
               },
-              "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Data\\ShopMaar.Data.csproj": {
-                "projectPath": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar.Data\\ShopMaar.Data.csproj"
+              "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Data\\ShopMaar.Data.csproj": {
+                "projectPath": "C:\\Users\\hendr\\source\\repos\\ShopMaar\\ShopMaar.Data\\ShopMaar.Data.csproj"
               }
             }
           }
@@ -598,7 +594,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
