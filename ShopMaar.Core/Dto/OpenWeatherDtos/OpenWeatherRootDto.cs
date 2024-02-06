@@ -9,8 +9,8 @@ namespace ShopMaar.Core.Dto.OpenWeatherDtos
 {
     public class OpenWeatherRootDto
     {
-        public OpenHeadlineDto OpenHeadline { get; set; }
-        public List<DailyOpenForecastDto> DailyOpenForecasts { get; set; }
+        //public OpenHeadlineDto OpenHeadline { get; set; }
+        //public List<DailyOpenForecastDto> DailyOpenForecasts { get; set; }
 
     }
 }

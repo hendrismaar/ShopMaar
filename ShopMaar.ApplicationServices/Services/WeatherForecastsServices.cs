@@ -69,16 +69,16 @@ namespace ShopMaar.ApplicationServices.Services
             using (WebClient client = new WebClient())
             {
                 string json = client.DownloadString(url);
-                OpenWeatherRootDto weatherInfo = new JavaScriptSerializer().Deserialize<OpenWeatherRootDto>(json);
+                OpenWeatherRootDto weatherinfo = new JavaScriptSerializer().Deserialize<OpenWeatherRootDto>(json);
 
-                dto.City = weatherInfo.Name;
-                dto.Temp = Math.Round(weatherInfo.Main.Temp);
-                dto.Feels_like = Math.Round(weatherInfo.Main.Feels_like);
-                dto.Humidity = weatherInfo.Main.Humidity;
-                dto.Pressure = weatherInfo.Main.Pressure;
-                dto.Speed = weatherInfo.Main.Speed;
-                dto.description = weatherInfo.Weather[0].Description;
-            }                  
+                //dto.City = weatherinfo.Name;
+                //dto.Temp = Math.Round(weatherinfo.Main.Temp);
+                //dto.Feels_like = Math.Round(weatherinfo.Main.Temp);
+                //dto.Humidity = weatherinfo.Main.Humidity;
+                //dto.Pressure = weatherinfo.Main.Pressure;
+                //dto.Speed = weatherinfo.Main.Speed;
+                //dto.Description = weatherinfo.Weather[0].Description;
+            }
             return dto;
         }
     }
