@@ -1,11 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopMaar.Core.ServiceInterface;
 using ShopMaar.Core.Dto.WeatherDtos;
-using ShopMaar.Core.Dto.OpenWeatherDtos;
 using ShopMaar.Core.ServiceInterface;
 using ShopMaar.Models.Weather;
-using ShopMaar.Models.OpenWeather;
-
 
 namespace ShopMaar.Controllers
 {
@@ -31,15 +28,7 @@ namespace ShopMaar.Controllers
             }
             return View();
         }
-        [HttpPost]
-        public IActionResult ShowOpenWeather()
-        {
-            if (ModelState.IsValid)
-            {
-                return RedirectToAction("OpenCity", "WeatherForecasts");
-            }
-            return View();
-        }
+        
         [HttpGet]
         public IActionResult City()
         {
@@ -77,17 +66,6 @@ namespace ShopMaar.Controllers
             vm.NightPrecipitationIntensity = dto.NightPrecipitationIntensity;
 
             return View(vm);
-
-        }
-        [HttpPost]
-        public IActionResult OpenCity()
-        {
-            
-               if (ModelState.IsValid)
-            {
-                return RedirectToAction("OpenCity", "OpenWeathers");
-            }
-            return View();
         }
     }
 }

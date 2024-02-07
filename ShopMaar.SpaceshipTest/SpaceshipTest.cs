@@ -78,7 +78,61 @@ namespace ShopMaar.SpaceshipTest
             Assert.DoesNotMatch(spaceship.Name, dto.Name);
             Assert.NotEqual(spaceship.PassengerCount, dto.PassengerCount);
         }
+        [Fact]
+        public async Task Should_DeleteByIdSpaceship_WhenDeleteSpaceship()
+        {
+            SpaceshipDto dto = MockSpaceshipData();
+            var Spaceship = await Svc<ISpaceshipsServices>().Create(dto);
 
+            var result = await Svc<ISpaceshipsServices>().Delete((Guid)Spaceship.Id);
+
+            Assert.Equal(result, Spaceship);
+        }
+        [Fact]
+        public async Task ShouldNot_DeleteByIdSpaceship_WhenDidNotDeleteSpaceship()
+        {
+            SpaceshipDto dto = MockSpaceshipData();
+            var Spaceship = await Svc<ISpaceshipsServices>().Create(dto);
+        }
+        [Fact]
+        public async Task ShouldNot_UpdateSpaceship_WhenNotUpdateData()
+        {
+            SpaceshipDto dto = MockSpaceshipData();
+            var Spaceship = await Svc<ISpaceshipsServices>().Create(dto);
+
+            SpaceshipDto NullUpdate = MockNotUpdateSpaceship();
+            var result = await Svc<ISpaceshipsServices>().Update(NullUpdate);
+
+            var NullId = NullUpdate.Id;
+
+            Assert.True(result.Id != NullId);
+        }
+
+        private SpaceshipDto MockNotUpdateSpaceship()
+        {
+            SpaceshipDto NotSpaceship = new()
+            {
+                Name = "Testname",
+                Description = "Test description",
+                PassengerCount = 4,
+                CrewCount = 4,
+                CargoWeight = 3000,
+                MaxSpeedInVacuum = 200,
+                BuiltAtDate = DateTime.Now,
+                MaidenLaunch = DateTime.Now,
+                Manufacturer = "Test manufacturer",
+                IsSpaceshipPreviouslyOwned = true,
+                FullTripsCount = 1,
+                Type = "Test Type",
+                EnginePower = 9001,
+                FuelConsumptionPerDay = 4000,
+                MaintenanceCount = 0,
+                LastMaintenance = DateTime.Now,
+                CreatedAt = DateTime.Now,
+                ModifiedAt = DateTime.Now,
+            };
+            return NotSpaceship;
+        }
         private SpaceshipDto MockSpaceshipData()
         {
             SpaceshipDto spaceship = new()
@@ -104,5 +158,6 @@ namespace ShopMaar.SpaceshipTest
             };
             return spaceship;
         }
+
     }
 }

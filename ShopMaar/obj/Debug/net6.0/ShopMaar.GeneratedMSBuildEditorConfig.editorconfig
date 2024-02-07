@@ -48,6 +48,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/opilane/source/repos/TARpe21/ddd/ShopMaar/Views/OpenWeather/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlbldlYXRoZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/opilane/source/repos/TARpe21/ddd/ShopMaar/Views/OpenWeather/OpenCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlbldlYXRoZXJcT3BlbkNpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/opilane/source/repos/TARpe21/ddd/ShopMaar/Views/RealEstates/CreateUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhbEVzdGF0ZXNcQ3JlYXRlVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -102,10 +110,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/opilane/source/repos/TARpe21/ddd/ShopMaar/Views/WeatherForecasts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckZvcmVjYXN0c1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/opilane/source/repos/TARpe21/ddd/ShopMaar/Views/WeatherForecasts/OpenCity.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VhdGhlckZvcmVjYXN0c1xPcGVuQ2l0eS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/opilane/source/repos/TARpe21/ddd/ShopMaar/Views/_ViewImports.cshtml]

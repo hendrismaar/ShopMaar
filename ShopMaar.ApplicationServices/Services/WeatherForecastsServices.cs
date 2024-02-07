@@ -64,20 +64,20 @@ namespace ShopMaar.ApplicationServices.Services
 
         public async Task<OpenWeatherResultDto> OpenWeatherDetail(OpenWeatherResultDto dto)
         {
-            var url = $"https://api.openweathermap.org/data/2.5/weather?q=tallinn?appid=d67b2095891b8cf82a4f07c10da54cff";
+            var url = $"https://api.openweathermap.org/data/2.5/weather?q=Tallinn&units=metric&appid=d67b2095891b8cf82a4f07c10da54cff";
         
             using (WebClient client = new WebClient())
             {
                 string json = client.DownloadString(url);
-                OpenWeatherRootDto weatherinfo = new JavaScriptSerializer().Deserialize<OpenWeatherRootDto>(json);
+                OpenWeatherRootDto openWeatherInfo = new JavaScriptSerializer().Deserialize<OpenWeatherRootDto>(json);
 
-                //dto.City = weatherinfo.Name;
-                //dto.Temp = Math.Round(weatherinfo.Main.Temp);
-                //dto.Feels_like = Math.Round(weatherinfo.Main.Temp);
-                //dto.Humidity = weatherinfo.Main.Humidity;
-                //dto.Pressure = weatherinfo.Main.Pressure;
-                //dto.Speed = weatherinfo.Main.Speed;
-                //dto.Description = weatherinfo.Weather[0].Description;
+                dto.City = openWeatherInfo.Name;
+                dto.Temp = Math.Round(openWeatherInfo.Main.Temp);
+                dto.Feels_like = Math.Round(openWeatherInfo.Main.Temp);
+                dto.Humidity = openWeatherInfo.Main.Humidity;
+                dto.Pressure = openWeatherInfo.Main.Pressure;
+                dto.Speed = openWeatherInfo.Wind.Speed;
+                dto.Description = openWeatherInfo.Weather[0].Description;
             }
             return dto;
         }

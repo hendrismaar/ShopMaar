@@ -245,6 +245,30 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar\\wwwroot\\multipleFileUpload\\82705a1c-3d6e-49db-9b44-264dcf7a34bc_auto.png",
+      "PackagePath": "staticwebassets\\multipleFileUpload\\82705a1c-3d6e-49db-9b44-264dcf7a34bc_auto.png"
+    },
+    {
+      "Id": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar\\wwwroot\\multipleFileUpload\\911ad3dd-58d8-40cf-9433-526e9ea034fb_evil.gif",
+      "PackagePath": "staticwebassets\\multipleFileUpload\\911ad3dd-58d8-40cf-9433-526e9ea034fb_evil.gif"
+    },
+    {
+      "Id": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar\\wwwroot\\multipleFileUpload\\a8fbc1b0-bee6-407d-8925-128ee3e2cbb4_auto.png",
+      "PackagePath": "staticwebassets\\multipleFileUpload\\a8fbc1b0-bee6-407d-8925-128ee3e2cbb4_auto.png"
+    },
+    {
+      "Id": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar\\wwwroot\\multipleFileUpload\\ae06a25c-b4c1-4cfd-881f-6b6248a50d3c_auto.png",
+      "PackagePath": "staticwebassets\\multipleFileUpload\\ae06a25c-b4c1-4cfd-881f-6b6248a50d3c_auto.png"
+    },
+    {
+      "Id": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar\\wwwroot\\multipleFileUpload\\ecb0982a-33cf-40fe-a26b-df4255db7fe6_auto.png",
+      "PackagePath": "staticwebassets\\multipleFileUpload\\ecb0982a-33cf-40fe-a26b-df4255db7fe6_auto.png"
+    },
+    {
+      "Id": "C:\\Users\\opilane\\source\\repos\\TARpe21\\ddd\\ShopMaar\\wwwroot\\multipleFileUpload\\evil.gif",
+      "PackagePath": "staticwebassets\\multipleFileUpload\\evil.gif"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ShopMaar.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

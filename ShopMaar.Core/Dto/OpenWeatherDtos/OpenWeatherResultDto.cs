@@ -10,7 +10,7 @@ namespace ShopMaar.Core.Dto.OpenWeatherDtos
 {
     public class OpenWeatherResultDto
     {
-        public string Name { get; set; }
+        public string City { get; set; }
         public string Description { get; set; }
         public double Temp { get; set; }
         public double Feels_like { get; set; }
