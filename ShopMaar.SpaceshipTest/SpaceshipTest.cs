@@ -93,6 +93,11 @@ namespace ShopMaar.SpaceshipTest
         {
             SpaceshipDto dto = MockSpaceshipData();
             var Spaceship = await Svc<ISpaceshipsServices>().Create(dto);
+            var Spaceship2 = await Svc<ISpaceshipsServices>().Create(dto);
+
+            var result = await Svc<ISpaceshipsServices>().Delete((Guid)Spaceship2.Id);
+
+            Assert.NotEqual(result.Id, Spaceship.Id);
         }
         [Fact]
         public async Task ShouldNot_UpdateSpaceship_WhenNotUpdateData()

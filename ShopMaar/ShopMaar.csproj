@@ -7,11 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\multipleFileUpload\82705a1c-3d6e-49db-9b44-264dcf7a34bc_auto.png" />
-    <None Include="wwwroot\multipleFileUpload\911ad3dd-58d8-40cf-9433-526e9ea034fb_evil.gif" />
-    <None Include="wwwroot\multipleFileUpload\a8fbc1b0-bee6-407d-8925-128ee3e2cbb4_auto.png" />
-    <None Include="wwwroot\multipleFileUpload\ae06a25c-b4c1-4cfd-881f-6b6248a50d3c_auto.png" />
-    <None Include="wwwroot\multipleFileUpload\ecb0982a-33cf-40fe-a26b-df4255db7fe6_auto.png" />
+    <None Include="wwwroot\multipleFileUpload\cf9f3519-fdb9-4246-91bf-8e5ae25f164d_boop.png" />
     <None Include="wwwroot\multipleFileUpload\evil.gif" />
   </ItemGroup>
 

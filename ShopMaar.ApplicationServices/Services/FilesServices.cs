@@ -70,15 +70,15 @@ namespace ShopMaar.ApplicationServices.Services
             string uniqueFileName = null;
             if (dto.Files != null && dto.Files.Count > 0)
             {
-                if (!Directory.Exists(_webHost.ContentRootPath + "\\multipleFileUpload\\"))
+                if (!Directory.Exists(_webHost.ContentRootPath + "\\wwwroot" + "\\multipleFileUpload\\"))
                 {
-                    Directory.CreateDirectory(_webHost.ContentRootPath + "\\multipleFileUpload\\");
+                    Directory.CreateDirectory(_webHost.ContentRootPath + "\\wwwroot" + "\\multipleFileUpload\\");
                 }
                 foreach (var image in dto.Files)
                 {
-                    string uploadsFolder = Path.Combine(_webHost.ContentRootPath, "multipleFileUpload");
-                    uniqueFileName = Guid.NewGuid().ToString() + "_" + image.FileName;
-                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    string uploadsFolder = Path.Combine(_webHost.ContentRootPath, "wwwroot\\" + "multipleFileUpload");
+                    uniqueFileName = Guid.NewGuid().ToString() +"_" + image.FileName;
+                    string filePath = Path.Combine(uploadsFolder,uniqueFileName);
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
                         image.CopyTo(fileStream);
@@ -99,7 +99,7 @@ namespace ShopMaar.ApplicationServices.Services
             {
                 var imageId = await _context.FilesToApi
                     .FirstOrDefaultAsync(x => x.ExistingFilePath == dto.ExistingFilePath);
-                var filePath = _webHost.ContentRootPath + "\\multipleFileUpload\\" + imageId.ExistingFilePath;
+                var filePath = _webHost.ContentRootPath + "\\wwwroot" + "\\multipleFileUpload\\" + imageId.ExistingFilePath;
                 if (File.Exists(filePath))
                 {
                     File.Delete(filePath);
@@ -113,7 +113,7 @@ namespace ShopMaar.ApplicationServices.Services
         {
             var imageId = await _context.FilesToApi
                 .FirstOrDefaultAsync(x => x.Id == dto.Id);
-            var filePath = _webHost.ContentRootPath + "\\multipleFileUpload\\" + imageId.ExistingFilePath;
+            var filePath = _webHost.ContentRootPath + "\\wwwroot" + "\\multipleFileUpload\\" + imageId.ExistingFilePath;
             if (File.Exists(filePath))
             {
                 File.Delete(filePath);
@@ -127,13 +127,13 @@ namespace ShopMaar.ApplicationServices.Services
             string uniqueFileName = null;
             if (dto.Files != null && dto.Files.Count > 0)
             {
-                if (!Directory.Exists(_webHost.ContentRootPath + "\\multipleFileUpload\\"))
+                if (!Directory.Exists(_webHost.ContentRootPath + "\\wwwroot" + "\\multipleFileUpload\\"))
                 {
-                    Directory.CreateDirectory(_webHost.ContentRootPath + "\\multipleFileUpload\\");
+                    Directory.CreateDirectory(_webHost.ContentRootPath + "\\wwwroot" + "\\multipleFileUpload\\");
                 }
                 foreach (var image in dto.Files)
                 {
-                    string uploadsFolder = Path.Combine(_webHost.ContentRootPath, "multipleFileUpload");
+                    string uploadsFolder = Path.Combine(_webHost.ContentRootPath, "wwwroot\\" + "multipleFileUpload");
                     uniqueFileName = Guid.NewGuid().ToString() + "_" + image.FileName;
                     string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                     using (var fileStream = new FileStream(filePath, FileMode.Create))

@@ -44,7 +44,17 @@ namespace ShopMaar.ApplicationServices.Services
         public async Task<Car> Delete(Guid id)
         {
             var carId = await _context.Cars
+                .Include(x => x.FilesToApi)
                 .FirstOrDefaultAsync(x => x.Id == id);
+            var images = await _context.FilesToApi
+                .Where(x => x.CarId == id)
+                .Select(y => new FileToApiDto
+                {
+                    Id = y.Id,
+                    RealEstateId = y.CarId,
+                    ExistingFilePath = y.ExistingFilePath
+                }).ToArrayAsync();
+            await _fileServices.RemoveImagesFromApi(images);
             _context.Cars.Remove(carId);
             await _context.SaveChangesAsync();
             return carId;
