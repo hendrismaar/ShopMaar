@@ -50,6 +50,11 @@ namespace ShopMaar.Controllers
             var dto = new CarDto()
             {
                 Id = Guid.NewGuid(),
+                Brand = vm.Brand,
+                Model = vm.Model,
+                Price = vm.Price,
+                Description = vm.Description,
+                GearShiftType = vm.GearShiftType,
                 CreatedAt = DateTime.Now,
                 ModifiedAt = DateTime.Now,
                 Files = vm.Files,
@@ -66,7 +71,7 @@ namespace ShopMaar.Controllers
             {
                 return RedirectToAction(nameof(Index));
             }
-            return RedirectToAction("Index", vm);
+            return RedirectToAction(nameof(Index), vm);
         }
         [HttpGet]
         public async Task<IActionResult> Update(Guid id)
@@ -102,7 +107,7 @@ namespace ShopMaar.Controllers
         {
             var dto = new CarDto()
             {
-                Id = Guid.NewGuid(),
+                Id = (Guid)vm.Id,
                 Brand = vm.Brand,
                 Model = vm.Model,
                 Price = vm.Price,
@@ -117,7 +122,7 @@ namespace ShopMaar.Controllers
                     Id = x.ImageId,
                     ExistingFilePath = x.FilePath,
                     CarId = x.CarId,
-                })
+                }).ToArray()
             };
             var result = await _carService.Update(dto);
             if (result == null)

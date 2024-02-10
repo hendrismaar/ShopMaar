@@ -9,19 +9,19 @@ namespace ShopMaar.Core.Dto
 {
     public class CarDto
     {
-        public Guid? Id { get; set; } // creates unique id
-        public string Brand { get; set; } // creates car brand
-        public string Model { get; set; } // creates car model
-        public decimal Price { get; set; } // creates car model
+        public Guid? Id { get; set; }
+        public string Brand { get; set; } 
+        public string Model { get; set; } 
+        public decimal Price { get; set; } 
         public string Description { get; set; }
         public string GearShiftType { get; set; }
 
         public List<IFormFile> Files { get; set; } //files 
-        public IEnumerable<FileToApiDto> FileToApiDtos { get; set; } = new List<FileToApiDto>(); //file viewmodels
+        public IEnumerable<FileToApiDto> FileToApiDtos { get; set; } = new List<FileToApiDto>(); 
 
         //database only properties
 
-        public DateTime CreatedAt { get; set; } // when entry was added to the database
-        public DateTime ModifiedAt { get; set; } //when was entry modified in the database
+        public DateTime CreatedAt { get; set; }
+        public DateTime ModifiedAt { get; set; } 
     }
 }
